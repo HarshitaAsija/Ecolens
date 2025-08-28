@@ -1,0 +1,8 @@
+EcoLens – Giving Forests a Voice
+
+"A forest lost in silence is a forest never saved."
+EcoLens is an AI-powered, community-driven forest monitoring platform that makes deforestation detection real-time, transparent, and actionable. Governments often sit on crucial data and delay interventions, while local communities—the ones most affected—remain unaware of the gradual destruction. EcoLens changes that narrative by democratizing satellite data and AI insights, empowering citizens, NGOs, and journalists to protect forests like never before.
+By combining open-source satellite imagery (Sentinel-2, Landsat) with advanced AI models (U-Net, YOLOv8), EcoLens detects illegal logging, mining, and land clearing with remarkable accuracy. The platform features a dynamic public map with time-lapse views and confidence scores, ensuring anyone can monitor forest health at a glance.
+What truly sets EcoLens apart is its Community Watch & Gamification—users validate alerts, improve AI accuracy, and earn recognition as “Forest Guardians.” When action is needed, EcoLens provides an Instant Escalation Toolkit: auto-generated reports with before-and-after imagery, email templates for local authorities, and ready-to-share social media posts to amplify awareness.
+An Impact Dashboard keeps everything transparent by tracking alerts, verified reports, and actions taken. Beyond monitoring, EcoLens builds a global movement to give forests a voice and communities the power to act.
+EcoLens envisions a future where every choice is seen through the lens of sustainability — a world where awareness transforms action, and small steps lead to a greener, thriving planet.
