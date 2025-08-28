@@ -1,159 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forest Protection</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9faf9;
-    }
-
-    section.forest-protection {
-      padding: 60px 20px;
-      background: #eef5f0;
-    }
-
-    /* ===== Centered Heading + Subheading ===== */
-    .forest-heading {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 50px auto;
-    }
-
-    .forest-heading h2 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      color: #1c3d2d;
-      margin-bottom: 15px;
-    }
-
-    .forest-heading p {
-      font-size: 1.1rem;
-      color: #4b5d50;
-    }
-
-    /* ===== Flex Container ===== */
-    .forest-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
-
-    .forest-text {
-      flex: 1 1 400px;
-    }
-
-    .forest-image {
-      flex: 1 1 400px;
-      text-align: center;
-    }
-
-    .forest-image img {
-      width: 85%;         /* slightly smaller than before */
-      max-width: 450px;   /* prevent too big */
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* ===== Feature Box ===== */
-    .feature-box {
-      background: white;
-      border-radius: 12px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-    }
-
-    .feature-box .tag {
-      display: inline-block;
-      background: #1c3d2d;
-      color: white;
-      font-size: 0.9rem;
-      padding: 4px 10px;
-      border-radius: 5px;
-      margin-bottom: 10px;
-    }
-
-    .feature-box h3 {
-      margin-top: 0;
-      color: #1c3d2d;
-    }
-
-    .feature-box p {
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .impact-box {
-      background: #eef5f0;
-      padding: 10px;
-      border-left: 4px solid #1c3d2d;
-      margin: 15px 0;
-      color: #1c3d2d;
-    }
-
-    .forest-btn {
-      display: inline-block;
-      margin-top: 10px;
-      background: #1c3d2d;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    .forest-btn:hover {
-      background: #2e6045;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoLens - Forest Guardian</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="EcoLens Logo" class="logo-icon">
+      <div>
+        <h1>EcoLens</h1>
+        <p>Forest Guardian</p>
+      </div>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Monitor</a></li>
+        <li><a href="#">Alerts</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Reports</a></li>
+        <li><a href="#">Analytics</a></li>
+      </ul>
+    </nav>
+    <div class="nav-buttons">
+      <span class="status-badge">24/7 Active</span>
+      <a href="#" class="btn-outline">Sign In</a>
+      <a href="#" class="btn-primary">Join Us</a>
+    </div>
+  </header>
 
-  <!-- ===== Forest Protection Section ===== -->
-  <section class="forest-protection">
-
-    <!-- Centered Heading + Subheading -->
-    <div class="forest-heading">
-      <h2>Powerful Forest Protection Tools</h2>
-      <p>
-        Everything you need to detect, verify, and act on forest destruction. 
-        Join our global community of forest guardians making a real difference.
-      </p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="tag">🌿 AI-Powered Forest Monitoring</span>
+      <h1><span class="highlight1">EcoLens</span> Gives Forests A Voice</h1>
+      <p>A forest lost in silence is a forest never saved. Combining satellite data with AI to detect deforestation and empower communities to take action.</p>
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary">Explore Forest Data →</a>
+        <a href="#" class="btn-secondary">Join Community Watch</a>
+      </div>
+      <div class="stats">
+        <div><h3>24/7</h3><p>Monitoring</p></div>
+        <div><h3>98%</h3><p>Accuracy</p></div>
+        <div><h3>Real-time</h3><p>Alerts</p></div>
+      </div>
     </div>
 
-    <div class="forest-container">
-      <div class="forest-text">
-        <div class="feature-box">
-          <span class="tag">Real-time Alerts</span>
-          <h3>AI Forest Detection</h3>
-          <p>
-            Automatically detect deforestation, illegal logging, and land clearing 
-            using advanced satellite imagery analysis. Get instant alerts when forests 
-            are under threat.
-          </p>
-
-          <div class="impact-box">
-            <strong>✨ Impact:</strong> Early detection saves forests
-          </div>
-
-          <a href="#" class="forest-btn">Try AI Forest Detection →</a>
-        </div>
+    <!-- Feature Cards -->
+    <div class="feature-cards">
+      <div class="feature-card">
+        <h4>🌐 AI Detection</h4>
+        <p>Advanced machine learning analyzes satellite imagery to detect illegal logging, mining, and land clearing in real-time.</p>
       </div>
-
-      <div class="forest-image">
-        <img src="forest1.png" alt="AI Forest Detection Map" />
+      <div class="feature-card">
+        <h4>👥 Community Action</h4>
+        <p>Empower local communities with verified data to hold authorities accountable and protect their forests.</p>
+      </div>
+      <div class="feature-card">
+        <h4>📑 Transparent Reporting</h4>
+        <p>Generate actionable reports with before/after imagery and automated escalation to media and authorities.</p>
       </div>
     </div>
   </section>
 
-</body>
-</html>
+  <!-- Problem Section -->
+  <section class="problem-section">
+    <div class="container">
+      <h1>The Problem We're Solving</h1>
+      <p class="subtitle">
+        Governments often possess data on deforestation but are slow to act due to capacity constraints.<br>
+        Local communities, who are most affected, are often unaware of the gradual encroachment on their lands.
+      </p>
 
+      <div class="features">
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3>Transparency</h3>
+          <p>Making forest data public and accessible to everyone, not just governments.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Speed</h3>
+          <p>Real-time AI detection means faster response times and immediate action.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌍</div>
+          <h3>Impact</h3>
+          <p>Empowering communities to hold authorities accountable and take direct action.</p>
+        </div>
+      </div>
 
+      <div class="highlight">
+        <em>"Instead of merely reporting findings to governmental bodies, we make this data public and actionable."</em>
+        <strong>EcoLens empowers citizens, journalists, NGOs, and local communities</strong>
+      </div>
+    </div>
+  </section>
+<section>
+    <section class="forest-protection">
+  <!-- Main Heading and Subheading -->
+  <div class="forest-title">
+    <h2>Powerful Forest Protection Tools</h2>
+    <p>Everything you need to detect, verify, and act on forest destruction. Join our global community of forest guardians making a real difference.</p>
+  </div>
+
+  <!-- Section 1 -->
+  <div class="forest-container">
+    <div class="forest-text">
+      <div class="feature-box">
+        <span class="tag">Real-time Alerts</span>
+        <h3>AI Forest Detection</h3>
+        <p>Automatically detect deforestation, illegal logging, and land clearing using advanced satellite imagery analysis. Get instant alerts when forests are under threat.</p>
+        <div class="impact-box">
+          Impact: Early detection saves forests
+        </div>
+        <a href="#" class="forest-btn">Try AI Forest Detection →</a>
+      </div>
+    </div>
+    <div class="forest-image">
+      <img src="forest1.png" alt="AI Forest Detection">
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="forest-container reverse">
+    <div class="forest-text">
+      <div class="feature-box">
+        <span class="tag">Interactive</span>
+        <h3>Live Forest Map</h3>
+        <p>Explore interactive maps showing forest health, recent alerts, and conservation efforts worldwide. Track changes over time with satellite imagery.</p>
+        <div class="impact-box">
+          Impact: See the global impact
+        </div>
+        <a href="#" class="forest-btn">Try Live Forest Map →</a>
+      </div>
+    </div>
+    <div class="forest-image">
+      <img src="forest2.png"Live Forest Map">
+    </div>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="forest-container">
+    <div class="forest-text">
+      <div class="feature-box">
+        <span class="tag">Join the Guardians</span>
+        <h3>Community Verification</h3>
+        <p>Join thousands of forest guardians validating alerts and improving detection accuracy. Earn rewards and help protect forests globally.</p>
+        <div class="impact-box">
+          Impact: Your voice matters
+        </div>
+        <a href="#" class="forest-btn">Try Community Verification →</a>
+      </div>
+    </div>
+    <div class="forest-image">
+      <img src="forest3.png" alt="Community Verification">
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="forest-container reverse">
+    <div class="forest-text">
+      <div class="feature-box">
+        <span class="tag">Direct Impact</span>
+        <h3>Instant Reports</h3>
+        <p>Generate professional reports with satellite evidence and submit directly to authorities, media, and conservation organizations.</p>
+        <div class="impact-box">
+          Impact: Take immediate action
+        </div>
+        <a href="#" class="forest-btn">Try Instant Reports →</a>
+      </div>
+    </div>
+    <div class="forest-image">
+      <img src="forest4.png" alt="Instant Reports">
+    </div>
+<section class="impact-section">
+  <div class="impact-title">
+    <h2>Real Impact, Real Results</h2>
+    <p>See how our global community is making a difference in forest conservation worldwide.</p>
+  </div>
+
+  <div class="impact-grid">
+    <!-- Card 1 -->
+    <div class="impact-card">
+      <div class="impact-icon">
+        <img src="sign1.png" alt="Forests Protected">
+      </div>
+      <h3>2,847</h3>
+      <p class="impact-heading">Forests Protected</p>
+      <p class="impact-subtext">Active monitoring areas worldwide</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="impact-card">
+      <div class="impact-icon">
+        <img src="sign2.png" alt="Forest Guardians">
+      </div>
+      <h3>10,234</h3>
+      <p class="impact-heading">Forest Guardians</p>
+      <p class="impact-subtext">Community members actively helping</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="impact-card">
+      <div class="impact-icon">
+        <img src="sign3.png" alt="Alerts Verified">
+      </div>
+      <h3>1,923</h3>
+      <p class="impact-heading">Alerts Verified</p>
+      <p class="impact-subtext">Community-validated environmental threats</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="impact-card">
+      <div class="impact-icon">
+        <img src="sign4.png" alt="Actions Taken">
+      </div>
+      <h3>456</h3>
+      <p class="impact-heading">Actions Taken</p>
+      <p class="impact-subtext">Real investigations and interventions</p>
+    </div>
+  </div>
+</section>
+      
